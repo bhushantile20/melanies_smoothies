@@ -122,6 +122,8 @@ if ingredients_list:
             "https://www.smoothiefroot.com/api/fruit/" + search_on
         )
 
+        st.text(smoothiefroot_response.text)
+
         st.dataframe(
             data=smoothiefroot_response.json(),
             use_container_width=True
